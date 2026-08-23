@@ -1,0 +1,12 @@
+{
+  "name": "YY1705K1A0",
+  "version": "1.0.0",
+  "keywords": "display, tft, st7735, st7735s, spi, graphics",
+  "description": "High-performance driver for YY1705K1A0 ST7735S 1.8 inch TFT SPI display breakout board.",
+  "authors": {
+    "name": "Open Source Community"
+  },
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "*"
+}

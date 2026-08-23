@@ -1,0 +1,8 @@
+Reference,Value,Footprint,Qty,Description,Manufacturer,MPN,Mouser / LCSC PN,Notes
+J2,FPC_ZIF_12_0.5mm,Local:FPC_12_0.5mm,1,12-pin 0.5mm pitch ZIF FPC connector top-contact,"Molex","54548-1271","538-54548-1271","Must match display flex cable pitch — verify with calipers. Alt: GHR-12V-S (1.25mm pitch) if your module uses 1.25mm"
+J1,ESP32_HDR_7,PinHeader_1x07_P2.54mm,1,1×7 2.54mm break-away male pin header,"Any","","","Mating: 2.54mm female Dupont socket"
+R1,22R,R_0402_1005Metric,1,22 ohm 1/4W SMD 0402 — LEDA current-limit resistor,"Yageo","RC0402FR-0722RL","71-RC0402FR-0722RL","Power dissipation: (3.3-2.2)²/22 ≈ 55mW — 0402 rated 62.5mW — acceptable"
+R2,10k,R_0402_1005Metric,1,10k ohm SMD 0402 — RESET pull-up resistor,"Yageo","RC0402FR-0710KL","71-RC0402FR-0710KL",""
+R3,10k,R_0402_1005Metric,1,10k ohm SMD 0402 — CS pull-up resistor,"Yageo","RC0402FR-0710KL","71-RC0402FR-0710KL",""
+C1,10uF,C_0402_1005Metric,1,10µF 10V X5R ceramic capacitor SMD 0402 — VDD bulk,"Murata","GRM155R61A106ME11D","81-GRM155R61A106ME1D","Place within 1mm of VDD pin"
+C2,100nF,C_0402_1005Metric,1,100nF 10V X7R ceramic capacitor SMD 0402 — VDD bypass,"Murata","GRM155R71A104KA01D","81-GRM155R71A104KA01","Place within 0.5mm of VDD pin"

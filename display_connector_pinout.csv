@@ -1,0 +1,13 @@
+Pin,Signal,Function,Connection,Notes
+1,LEDA,Backlight anode,+3.3V rail,Through 22 ohm 1/4W SMD resistor in series
+2,LEDK,Backlight cathode,GND plane,Direct connection
+3,VDD,Logic power,+3.3V rail,Place 10uF and 0.1uF decoupling caps to GND at this pin
+4,VDDIO,IO logic power,Pin 3 (+3.3V),Tie directly to VDD
+5,GND,Ground,GND plane,Direct connection
+6,RESET,Reset signal,GPIO4,Optional 10k ohm pull-up to 3.3V
+7,DC / A0,Data/command select,GPIO2,Direct connection
+8,SDA / MOSI,SPI data,GPIO23,Direct connection
+9,SCL / SCK,SPI clock,GPIO18,Direct connection
+10,CS,Chip select,GPIO5,Optional 10k ohm pull-up to 3.3V
+11,Shield / core GND,Shield ground,GND plane,Direct connection
+12,NC,Not connected,None,Leave pad isolated - do not route
