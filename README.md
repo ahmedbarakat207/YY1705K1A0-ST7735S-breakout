@@ -12,6 +12,7 @@ An open-source, **1-layer single-sided PCB breakout board** and **high-performan
 ## Features
 
 - **100% Single-Sided (1-Layer F.Cu)**: Designed specifically for home etching (toner transfer / photoresist). Zero jumpers or bottom vias required.
+- **Through-Hole Passives (no SMD soldering)**: R1, R2, R3, C1, C2 are all standard through-hole parts — solder them with any basic iron. The only SMD part is the J2 FPC ZIF connector (required by the display flex cable).
 - **Zero DRC Violations**: Optimized trace widths (0.35 mm signals, 0.60 mm power/GND) with 0.30 mm minimum clearances.
 - **Clean Silkscreen**: Professional component labeling with open routing corridors.
 - **Header-Only C++ Driver (`YY1705K1A0.h`)**:
@@ -57,12 +58,12 @@ An open-source, **1-layer single-sided PCB breakout board** and **high-performan
 
 | Designator | Description | Package / Footprint | Quantity |
 |---|---|---|:---:|
-| **J1** | 7-Pin 2.54mm Header Male/Female | 1×07 Pin Header (0.1") | 1 |
-| **J2** | 12-Pin 0.5mm Pitch Bottom-Contact FPC Connector | SMD 12-Pin 0.5mm | 1 |
-| **R1** | 22 Ω Backlight Current Limiter | SMD 0805 | 1 |
-| **R2, R3** | 10 kΩ Pull-up Resistors (`CS`, `RST`) | SMD 0805 | 2 |
-| **C1** | 10 µF 10V/16V Ceramic Capacitor (Bulk Decoupling) | SMD 0805 | 1 |
-| **C2** | 100 nF (0.1 µF) Ceramic Capacitor (High-Freq Bypass) | SMD 0805 | 1 |
+| **J1** | 7-Pin 2.54mm Header Male/Female | 1×07 Pin Header (0.1") THT | 1 |
+| **J2** | 12-Pin 0.5mm Pitch Bottom-Contact FPC Connector | SMD 12-Pin 0.5mm **(only SMD part)** | 1 |
+| **R1** | 22 Ω Backlight Current Limiter | Axial 1/4W THT, 7.62mm pitch (lying flat) | 1 |
+| **R2, R3** | 10 kΩ Pull-up Resistors (`RESET`, `CS`) | Axial 1/4W THT, 5.08mm pitch (vertical mount) | 2 |
+| **C1** | 10 µF 10V Ceramic/Electrolytic (Bulk Decoupling) | Disc/Radial THT, 5mm pitch | 1 |
+| **C2** | 100 nF (0.1 µF) Ceramic Disc (HF Bypass) | Disc THT, 5mm pitch | 1 |
 
 ---
 
